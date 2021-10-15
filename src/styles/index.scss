@@ -1,13 +1,24 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+
+//Font
+
+$Family: "Rubik", sans-serif;
+$Weights: 300, 400, 500;
+
+html {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: hsl(226, 43%, 10%);
+
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: $Family;
+  color: #f2f2f2;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
