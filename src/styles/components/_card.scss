@@ -11,12 +11,6 @@ $hover_effect: hsl(235, 45%, 61%);
 
 //(card titles e.g. Work, Play)
 
-h1,
-h2,
-p {
-  margin: 0px;
-}
-
 .Work {
   background-color: hsl(15, 100%, 70%);
 }
@@ -51,8 +45,9 @@ p {
     overflow: hidden;
     img {
       position: relative;
-      left: 190px;
+      left: 70%;
       bottom: 10px;
+      width: 30%;
     }
   }
 

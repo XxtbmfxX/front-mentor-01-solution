@@ -1,8 +1,5 @@
-import "../styles/components/Card.scss";
-
-const Card = ({ title, daily, monthly, weekly, image }) => {
+const Card = ({ title, image, timeFrame, timeLapse }) => {
   const styleClass = ` Card ${title} `;
-
   return (
     <div className={styleClass}>
       <div className="Card_img">
@@ -18,8 +15,15 @@ const Card = ({ title, daily, monthly, weekly, image }) => {
           </div>
         </div>
         <div className="Card_bottom-down">
-          <h1> 4hrs </h1>
-          <span> Last Week - 12 min</span>
+          <h1>
+            {" "}
+            {timeFrame[timeLapse].current}
+            {timeLapse === "daily" ? "min" : "hr"}
+          </h1>
+          <span>
+            Last Week - {timeFrame[timeLapse].previous}
+            {timeLapse === "daily" ? "min" : "hr"}
+          </span>
         </div>
       </div>
     </div>

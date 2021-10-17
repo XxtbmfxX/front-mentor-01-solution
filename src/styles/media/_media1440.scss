@@ -1,0 +1,64 @@
+@media screen and (min-width: 1440px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+
+  .App {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    gap: 10px;
+  }
+
+  .Card_bottom {
+    height: 125px;
+    &-down {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding-bottom: 20px;
+      h1 {
+        font-size: 3.5rem;
+      }
+      span {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .UserCard {
+    grid-row: 1 / span 2;
+    grid-column: unset;
+    height: 100%;
+    &_top {
+      flex-direction: column;
+      align-items: flex-start;
+      height: 70%;
+      padding: 10px;
+      h1 {
+        font-size: 3rem;
+      }
+      img {
+        height: 60px;
+        width: 60px;
+        margin-left: 10px;
+      }
+    }
+
+    &_bottom {
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+      //   padding: 10px;
+      margin-top: 20px;
+      span {
+        text-align: start;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

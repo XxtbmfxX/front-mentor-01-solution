@@ -1,0 +1,23 @@
+body {
+  background-color: $very-dark-blue;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: $Font-title;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+span {
+  color: hsl(236, 100%, 87%);
+}
+
+@import "./card";
+@import "./userCard";

@@ -2,9 +2,8 @@ import React from "react";
 
 import UserImg from "../images/image-jeremy.png";
 
-import "../styles/components/UserCard.scss";
-
-const UserCard = () => {
+const UserCard = ({ handleClick, timeLapse }) => {
+  const activeStyle = timeLapse;
   return (
     <div className="UserCard">
       <div className="UserCard_top">
@@ -15,9 +14,24 @@ const UserCard = () => {
         </div>
       </div>
       <div className="UserCard_bottom">
-        <span>Daily</span>
-        <span>Weekly</span>
-        <span>Monthly</span>
+        <span
+          onClick={handleClick}
+          className={activeStyle === "daily" ? "active" : "unu"}
+        >
+          Daily
+        </span>
+        <span
+          onClick={handleClick}
+          className={activeStyle === "weekly" ? "active" : "unu"}
+        >
+          Weekly
+        </span>
+        <span
+          onClick={handleClick}
+          className={activeStyle === "monthly" ? "active" : "unu"}
+        >
+          Monthly
+        </span>
       </div>
     </div>
   );
