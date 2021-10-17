@@ -57,8 +57,8 @@ I need a better structure in my workflow and more practice with Grid and CSS fra
 
 ## Acknowledgments
 
-[Bluuweb](https://www.youtube.com/watch?v=Xe_qNR1mmCg&t=229s)
-
 - This video helped me with netlify and some concepts :D
-  [MRZ.Code.Manufacture](https://www.youtube.com/watch?v=AtWjtiayOsI&t=393s)
+  [Bluuweb](https://www.youtube.com/watch?v=Xe_qNR1mmCg&t=229s)
+
 - This video helped me with the hover effect :D
+  [MRZ.Code.Manufacture](https://www.youtube.com/watch?v=AtWjtiayOsI&t=393s)
